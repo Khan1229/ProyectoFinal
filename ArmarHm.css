@@ -1,0 +1,86 @@
+.armarHamburguesa{
+    position: absolute;
+    display: none;
+}
+
+
+.alinearTexto{
+    text-align: center;
+    padding-top: 5px;
+    
+
+}
+.armarHamburguesa{
+    height: 1500px;
+    width: 100%;
+    background: #870000; 
+    background: -webkit-linear-gradient(to top rgb(129, 37, 4), #870000);  
+    background: linear-gradient(to top, #870000, rgb(195, 226, 21), rgb(187, 19, 19)); 
+    overflow: hidden;
+}
+
+.containerSeleccion{
+    display: inline-flex;
+    align-items: center;
+    height: 250px;
+    width: 100%;
+    overflow: auto;
+    justify-content: center;
+}
+
+.seleccion{
+    display: block;
+    border: 2px solid white;
+    border-radius: 5px;
+    height: 80%;
+    margin: 0 5px;
+    font-size: 50%;
+    justify-content: center;
+}
+
+.datos{
+    height: 80%;
+    width: 100%;
+    display: block;
+    justify-content: center;
+    align-items: center;    
+}
+
+.seleccion div img{
+    max-height: 50%;
+    max-width: 100%;
+}
+
+.seleccion:hover{
+    background-color: rgba(0, 0, 0, 0.199);
+    cursor: pointer;
+}
+
+.botones{
+    height: 10%;
+}
+
+@media (min-width: 1080px){
+    .seleccion{
+        display: flexbox;
+        height: 80%;
+        width: 200px;
+        font-size: 60%;
+        align-items: center;
+    }
+
+    .datos{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 80%;
+        justify-content: center;
+    }
+
+    .botones{
+        width: 100%;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+    }
+}

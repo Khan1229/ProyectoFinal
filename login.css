@@ -1,0 +1,138 @@
+*{margin: 0;}
+
+.background{
+    background: skyblue;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.fondo {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 100vh 100vw 0 0;
+    border-color: #7589fa #fa7575 transparent transparent;
+    position: relative;
+  }
+
+.cajera-icon, .chef-icon, .kitchen, .cashier{
+    position: absolute;
+    font-size: 700%;
+    color: white;
+}
+
+.cajera-icon{
+    min-height: 30%;
+    max-height: 45%;
+    max-width: 60%;
+    bottom: 5%;
+    right: 5%;
+}
+
+.chef-icon{
+    min-height: 30%;
+    max-height: 45%;
+    max-width: 60%;
+    top: 5%;
+    left: 5%;
+    
+}
+
+.cajera-icon:hover{
+    transition-duration: 0.5s;
+    max-height: 50%;
+    cursor: pointer;
+}
+
+.chef-icon:hover{
+    transition-duration: 0.5s;
+    max-height: 50%;
+    cursor: pointer;
+
+}
+
+.kitchen{
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    max-block-size: 30%;
+}
+
+.cashier{
+    left: 50%;
+    bottom: -2%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.login{
+    width: 70%;
+    height: 40%;
+    background: #7589fa;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    background: rgb(177, 33, 33);
+    border: 10px solid red;
+    border-radius: 5px;
+    visibility: hidden;
+    z-index: 100;
+    font-family: sans-serif;
+    box-shadow: 30px 30px 30px;
+}
+
+.user, .pass{
+	width: 70%;
+	height: 30px;
+	background: transparent;
+	border: 1px solid rgba(255,255,255,0.6);
+	border-radius: 2px;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 20px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.boton{
+    margin-top: 1px;
+	width: 40%;
+    height: 30px;
+    font-family: 'Exo', sans-serif;
+	font-size: 16px;
+    background: rgb(25, 70, 116);
+    border-radius: 6px;
+    transition: all .3s cubic-bezier(0.67, 0.17, 0.40, 0.83);
+    color: white;
+    cursor: pointer;
+}
+.btnLogin{
+    position: absolute;
+    right:5px;
+    top:3px;
+    background:rgb(255, 0, 0);
+}
+.blocker {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;        /* hacemos que ocupe toda la pantalla a cualquier resolución*/
+    z-index: 50;        /* lo colocamos por encima del resto de componentes*/
+    background: url(b.png) repeat;  /*Color de fondo semitransparente*/
+    }
+
+@media (max-width: 1260px){
+    .kitchen, .cashier{
+        display: none;
+    }
+}
