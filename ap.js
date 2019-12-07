@@ -5,6 +5,7 @@ let app = new Vue({
     el:'#app',
     data() {
         return{
+            nombre: "Cajera",
             tipoIngredientes: null,
             ingredientes: null,
             contadorMas: null
